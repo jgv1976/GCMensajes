@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.miappgcm.gcmensajes.MensajeRecibido"
+    tools:showIn="@layout/activity_mensaje_recibido"
+    android:background="#000">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volver"
+        android:id="@+id/button5"
+        android:onClick="salir"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="151dp"
+        android:width="200dp"
+        android:height="60dp"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/tv_titulo"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        android:layout_marginTop="69dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tv_msj"
+        android:layout_alignStart="@+id/tv_msj"
+        android:layout_alignRight="@+id/tv_msj"
+        android:layout_alignEnd="@+id/tv_msj" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/tv_msj"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_below="@+id/tv_titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
